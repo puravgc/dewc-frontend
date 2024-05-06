@@ -128,10 +128,7 @@ body {
 .dropdown-item:hover {
   background-color: #f896a5;
 }
-.navbar-nav a:visited {
-  text-decoration: none;
-  color: black;
-}
+
 .nav-item {
   font-size: 20px;
   align-items: center;
@@ -139,6 +136,7 @@ body {
 }
 .nav-link{
   color: black;
+  text-decoration: none;
 }
 .nav-link:visited{
   color: black;
