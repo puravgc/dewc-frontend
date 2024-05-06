@@ -137,6 +137,12 @@ body {
   align-items: center;
   text-align: center;
 }
+.nav-link{
+  color: black;
+}
+.nav-link:visited{
+  color: black;
+}
 .button {
   border: 2px solid #ffb6c1;
   background-color: #fff;
