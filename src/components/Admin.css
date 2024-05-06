@@ -1,0 +1,71 @@
+.admin {
+  height: 100vh;
+  width: 100vw;
+}
+.top{
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.adminheading {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.mainadmin {
+  display: flex;
+  height: 94%;
+}
+.sidebar{
+  height: 100%;
+  width: 20%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+}
+.adminbutton{
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.adminbutton:hover {
+  background-color: black;
+  color: white;
+}
+.goback{
+  width: 100px;
+  padding: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+.goback:hover {
+  background-color: black;
+  color: white;
+}
+.admin-content{
+  width: 100%;
+ 
+  padding-top: 20px;
+}

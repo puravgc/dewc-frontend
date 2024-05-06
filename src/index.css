@@ -1,0 +1,1332 @@
+/*basic designing */
+
+/* :root {
+    --softPurple:#8a5ebc;
+
+} */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+:root {
+  --softTeal: #8ed8d8;
+  --softPink: #ffb6c1;
+  --softGray: #e0e0e0;
+  --cream: #fff8dc;
+}
+
+button,
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px; /* Set maximum width for larger screens */
+  margin: auto;
+}
+.xyz {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px; /* Adjust padding for smaller screens */
+  padding-right: 20px; /* Adjust padding for smaller screens */
+  background-color: #ffb6c1;
+}
+
+/* End of basic Design*/
+
+/* Start of Home Section */
+
+/* Header styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px; /* Adjust padding for smaller screens */
+  padding-right: 20px; /* Adjust padding for smaller screens */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-brand img {
+  height: 2.3vw;
+  max-height: 50px; /* Limit height for smaller screens */
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap; /* Allow nav items to wrap to next line if necessary */
+}
+.navbar-nav li {
+  list-style: none;
+  margin-bottom: 10px; /* Add spacing between nav items */
+}
+.navbar-nav a {
+  text-decoration: none;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background-color: #ffb6c1;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-item {
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.dropdown-item a {
+  color: black;
+}
+.dropdown-item:hover {
+  background-color: #f896a5;
+}
+.navbar-nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+.nav-item {
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+}
+.button {
+  border: 2px solid #ffb6c1;
+  background-color: #fff;
+  color: #ffb6c1;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #f896a5;
+  color: white; /* Darken the background color on hover */
+}
+/*Landing page*/
+.banner {
+  height: auto; /* Adjust height to content */
+  min-height: 100vh; /* Set minimum height to fill viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb6c1;
+}
+
+.banner h1 {
+  margin-top: 10%; /* Adjust margin for smaller screens */
+  font-size: 2.5rem;
+  color: var(--cream);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  text-align: center; /* Center align text */
+}
+
+.banner h1 span {
+  color: var(--softTeal); /* Orange color for span elements */
+  font-weight: bold; /* Reset font weight */
+  font-family: "Arial", sans-serif;
+  font-size: 2rem;
+}
+
+/* Add hover effect */
+.banner h1:hover {
+  color: var(--cream); /* Change color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+.slider {
+  height: 60vh;
+  width: 70vw;
+  max-width: 100%; /* Ensure slider does not exceed screen width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+  background: black;
+}
+@media screen and (max-width: 1440px) {
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+  .banner h1 span {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1327px) {
+  .slider {
+    align-items: center;
+  }
+}
+/* End of Home Section */
+
+/* About Us section */
+
+.aboutContent {
+  background-color: #ffb6c1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px; /* Adjust padding for smaller screens */
+  padding-right: 20px; /* Adjust padding for smaller screens */
+}
+
+/* Remaining CSS for Contact Section remains unchanged for responsiveness */
+
+.about-dropdown .sub-menu {
+  top: 50%;
+  left: 38%;
+  transform: translateX(-20%);
+}
+
+.about-dropdown .sub-menu li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: var(--cream);
+  font-size: 14px;
+  border-radius: 16px;
+}
+
+.about-dropdown .sub-menu li a:hover {
+  background-color: var(--softPink);
+}
+
+#vision {
+  font-size: 40px;
+  color: var(--cream);
+}
+
+#aboutSection {
+  background-color: var(--softPink); /* Set background color */
+  padding: 50px 0; /* Add padding */
+}
+
+.vissionPara {
+  margin-top: 10px;
+  font-size: 25px;
+  color: black;
+  width: 100%;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+#goal {
+  font-size: 40px;
+  color: var(--cream);
+  margin-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+#objective {
+  font-size: 40px;
+  color: var(--cream);
+  margin-bottom: 10px;
+  margin-top: 35px;
+}
+
+.aboutContainer {
+  width: 100%; /* Set container width to cover entire screen */
+  text-align: center; /* Center align text */
+}
+
+.aboutTitle {
+  font-size: 3.5rem;
+  color: var(--softTeal);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  margin-top: 50px;
+}
+
+.aboutTitle:hover {
+  color: var(--cream); /* Change color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+.aboutLogo {
+  margin-bottom: 20px; /* Add bottom margin to create space for logo */
+}
+
+.aboutLogo img {
+  width: 200px; /* Set logo width */
+  height: 120px; /* Maintain aspect ratio */
+  opacity: 0.7;
+}
+
+.initial-paragraph {
+  font-size: 25px; /* Set font size */
+  color: black; /* Set font color */
+  line-height: 1.6;
+  width: 100%;
+  /* Set line height */
+}
+
+.additional-paragraph {
+  font-size: 25px;
+  color: black;
+  width: 100%;
+  line-height: 1.6;
+}
+
+#read-more-btn {
+  margin-top: 20px;
+  background-color: var(--softTeal);
+  color: #333333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 30px;
+}
+
+#read-more-btn:hover {
+  background-color: var(--cream); /* Change background color on hover */
+}
+
+/*Team Section design*/
+
+.team-section {
+  background-color: var(--softPink);
+  text-align: center; /* Center the team members */
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 250px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  margin: 20px;
+  padding: 30px;
+  background-color: var(--cream);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  display: inline-block; /* Display inline */
+  vertical-align: top; /* Align to the top */
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid var(--softGray);
+}
+
+.team-member h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.intro-line {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+/* Education section starts */
+
+.education {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background: #ffb6c1;
+  border: 2px solid black;
+}
+
+.education .videoPlayer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.source {
+  width: 100%;
+  height: 100vh;
+}
+
+.info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.info a {
+  display: inline-block;
+  background-color: #ff0000;
+  color: var(--cream);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.info a img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.info a:hover {
+  background-color: #cc0000;
+}
+.educationContainer {
+  position: relative;
+  z-index: 1; /* Ensure the title appears above the video */
+}
+
+.educationTitle {
+  font-size: 3.5rem;
+  color: var(--softTeal);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  margin-top: 30px;
+  text-align: center; /* Center the title horizontally */
+  position: absolute;
+  z-index: 200;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.educationTitle:hover {
+  color: var(--cream);
+  text-decoration: underline;
+}
+
+.education .educationHolder {
+  position: absolute;
+  background-color: #00000096;
+  width: 400px;
+  top: 10vh;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.education .educationHolder h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--softTeal);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+}
+
+.education .educationHolder h3:hover {
+  color: var(--cream);
+  text-decoration: underline;
+}
+
+.eduLogo {
+  margin-bottom: 15px; /* Add bottom margin to create space for logo */
+}
+
+.eduLogo img {
+  width: 120px; /* Set logo width */
+  height: 80px;
+  opacity: 0.7; /* Maintain aspect ratio */
+}
+
+.education .educationHolder p {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 10px 0 30px;
+  margin-bottom: 10px;
+}
+
+#readMore {
+  background-color: var(--softTeal);
+  color: #333333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 30px;
+}
+
+#readMore:hover {
+  background-color: var(--cream);
+}
+@media screen and (max-width: 1160px) {
+  .educationTitle {
+    font-size: 35px;
+  }
+  .education .educationHolder p {
+    font-size: 15px;
+  }
+  .education .educationHolder h3 {
+    font-size: 25px;
+  }
+  .educationTitle {
+    padding-bottom: 20px;
+  }
+}
+
+/* Education section ends */
+
+/*Activity starts here*/
+
+/* Programs Designing starts here */
+
+.project-dropdown .sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3px 0;
+  margin: 0;
+  border: 1px solid fff;
+  border-top: none;
+  width: 150px;
+  text-align: center;
+}
+
+.project-dropdown:hover .sub-menu {
+  display: block;
+}
+
+.project-dropdown .sub-menu li {
+  display: block;
+  border-bottom: 1px solid #fff; /* Use #fff for white border */
+}
+
+.project-dropdown > a:after {
+  content: "\25BE";
+  margin-left: 5px;
+}
+
+.project-dropdown:hover > a:after {
+  content: "\25B4";
+}
+
+.project-dropdown .sub-menu {
+  top: 55%;
+  left: 55%;
+  transform: translateX(-50%);
+}
+
+.project-dropdown .sub-menu li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: var(--cream);
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+.project-dropdown .sub-menu li a:hover {
+  background-color: var(--softPink);
+}
+
+#projectSection {
+  background-color: var(--softPink);
+}
+#programSection {
+  background-color: var(--softPink); /* Set background color */
+  padding: 50px 0; /* Add padding */
+}
+
+.programContainer {
+  width: 100%; /* Set container width to cover entire screen */
+  text-align: center;
+  /* Center align text */
+}
+
+.programTitle {
+  font-size: 3.5rem;
+  color: var(--softTeal);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+}
+
+.programTitle:hover {
+  color: var(--cream); /* Change color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+.programLogo {
+  margin-bottom: 20px; /* Add bottom margin to create space for logo */
+}
+
+.programLogo img {
+  width: 200px; /* Set logo width */
+  height: 120px; /* Maintain aspect ratio */
+  opacity: 0.7;
+}
+
+.logoContainer {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align logos horizontally */
+  flex-wrap: wrap; /* Allow logos to wrap to the next line if necessary */
+}
+
+.logoContainer img {
+  margin: 10px;
+  width: 100px;
+  height: 75px;
+}
+
+/*Tewa*/
+
+.intro {
+  font-size: 30px;
+  margin-top: 50px;
+  color: var(--cream);
+}
+
+.he {
+  font-size: 30px;
+  margin-top: 60px;
+  color: var(--cream);
+}
+
+.she {
+  font-size: 30px;
+  margin-top: 60px;
+  color: var(--cream);
+}
+
+.para {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.projectimage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.projectimage img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.inside {
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.inside img:hover {
+  transform: scale(1.1);
+}
+
+/*income generating activities*/
+#activitySection {
+  background-color: var(--softPink); /* Set background color */
+  padding: 50px 0; /* Add padding */
+}
+
+.activityContainer {
+  width: 100%; /* Set container width to cover entire screen */
+  text-align: center; /* Center align text */
+}
+
+.activityTitle {
+  font-size: 3.5rem;
+  color: var(--softTeal);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+}
+
+.activityTitle:hover {
+  color: var(--cream); /* Change color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+#homeMadeActivity {
+  font-size: 40px;
+  color: var(--cream);
+}
+
+.activityContainer .activityHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add gap between items */
+}
+
+.activityContainer .activityHolder .activityItem {
+  position: relative;
+  width: 250px; /* Set fixed width for each item */
+  height: 250px; /* Set fixed height for each item */
+  overflow: hidden;
+  border: 2px solid white;
+  border-radius: 16px; /* Add white border */
+}
+
+.activityContainer .activityHolder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images fit within container without exceeding borders */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.activityContainer .activityHolder .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 5px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: white; /* Text color */
+  transition: opacity 0.3s ease; /* Add transition effect */
+  opacity: 0; /* Initially hidden */
+}
+
+.activityContainer .activityHolder .activityItem:hover .title {
+  opacity: 1; /* Show title on hover */
+}
+
+.activityContainer .activityHolder .Item:hover img {
+  transform: scale(1.05); /* Zoom in image on hover */
+}
+
+.para {
+  font-size: 20px;
+  margin-top: 10px;
+  color: black;
+}
+
+/*ENd of income genrating activities*/
+
+.collabTitle {
+  color: var(--cream);
+}
+
+/* .Wfe
+{
+    font-weight:bolder ;
+    font-size:70px;
+    text-align: center;
+    color:var(--softGray) ;
+} */
+/* Programs Designing ends here */
+
+/*Article designing starts here*/
+
+#articleSection {
+  background-color: var(--softPink);
+  padding: 50px 0;
+}
+
+.articleContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.articleTitle {
+  font-size: 3.5rem;
+  color: var(--softTeal);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+}
+
+.articleTitle:hover {
+  color: var(--cream); /* Change color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+.articleLogo {
+  margin-bottom: 20px; /* Add bottom margin to create space for logo */
+}
+
+.articleLogo img {
+  width: 200px;
+  height: 120px;
+  opacity: 0.7;
+}
+.articleItem h2 {
+  font-size: 50px;
+  color: var(--cream);
+  margin: 30px;
+  text-align: center;
+}
+
+.broucher img {
+  width: 500px; /* Set the width to medium size */
+  height: 800px; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+.broucher h2 {
+  font-size: 50px;
+  color: var(--cream);
+  margin: 30px;
+  text-align: center;
+}
+.articleItem img {
+  width: 550px; /* Set the width to medium size */
+  height: 800px; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+  object-fit: scale-down;
+}
+
+/*Article designing ends here*/
+
+/* Gallery Designing starts here */
+
+#gallerySection {
+  background-color: var(--softPink); /* Set background color */
+  padding: 50px 0; /* Add padding */
+}
+
+.galleryContainer {
+  width: 100%; /* Set container width to cover entire screen */
+  text-align: center; /* Center align text */
+}
+
+.galleryTitle {
+  font-size: 3.5rem;
+  color: var(--softTeal);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+}
+
+.galleryTitle:hover {
+  color: var(--cream); /* Change color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+.galleryLogo {
+  margin-bottom: 20px; /* Add bottom margin to create space for logo */
+}
+
+.galleryLogo img {
+  width: 200px; /* Set logo width */
+  height: 120px; /* Maintain aspect ratio */
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.galleryContainer .galleryHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add gap between items */
+}
+
+.galleryContainer .galleryHolder .galleryItem {
+  position: relative;
+  width: 250px; /* Set fixed width for each item */
+  height: 250px; /* Set fixed height for each item */
+  overflow: hidden;
+  border: 2px solid white;
+  border-radius: 16px; /* Add white border */
+}
+
+.galleryContainer .galleryHolder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images fit within container without exceeding borders */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.galleryContainer .galleryHolder .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 5px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: white; /* Text color */
+  transition: opacity 0.3s ease; /* Add transition effect */
+  opacity: 0; /* Initially hidden */
+}
+
+.galleryContainer .galleryHolder .galleryItem:hover .title {
+  opacity: 1; /* Show title on hover */
+}
+
+.galleryContainer .galleryHolder .galleryItem:hover img {
+  transform: scale(1.05); /* Zoom in image on hover */
+}
+
+/* Gallery Designing ends here */
+
+/* Contact Section Designing */
+.footer {
+  background-color: #ffb6c1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .contactTitle {
+  font-size: 3.5rem;
+  color: var(--softTeal);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer .contactLogo {
+  margin-bottom: 20px;
+}
+
+.footer .contactLogo img {
+  width: 200px;
+  height: 120px;
+  opacity: 0.7;
+}
+
+.footer .contact-item {
+  margin-bottom: 20px;
+}
+
+.footer .contact-item h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer .contact-item p {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.footer .contact-item a {
+  color: var(--cream);
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.footer .contact-item a:hover {
+  color: var(--cream);
+}
+
+.footer .social-icon {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.copyright-content p {
+  margin-top: 10px; /* Remove default margin */
+
+  color: black;
+}
+
+/*accessibility*/
+/* CSS for Accessibility button */
+/* .accessibility-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.accessibility-btn button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.accessibility-btn button:last-child {
+    margin-right: 0;
+} */
+
+#accessibility-btn img {
+  width: 50px; /* Adjust the width as per your requirement */
+  height: auto; /* Maintain aspect ratio */
+}
+.contrast {
+  display: flex;
+}
+.backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  z-index: 1000;
+}
+
+.backtotop button {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.backtotop button:hover {
+  transform: translateY(-3px);
+}
+.accessibility-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1000; /* Ensure the buttons appear above other content */
+}
+
+.accessibility-btn button {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%; /* Make the buttons circular */
+  width: 40px; /* Set the width for all buttons */
+  height: 40px; /* Set the height for all buttons */
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transition: transform 0.3s ease; /* Add smooth hover effect */
+  display: flex;
+  flex-direction: column;
+}
+
+.accessibility-btn button img {
+  width: 20px; /* Set the width of the image */
+  height: 20px; /* Set the height of the image */
+}
+
+.accessibility-btn button:hover {
+  transform: scale(1.1); /* Scale up slightly on hover */
+}
+
+.accessibility-btn {
+  display: none;
+}
+.main {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+  }
+
+  .menu-toggle {
+    cursor: pointer;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 16px;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+
+  .open .line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu ul li {
+    margin-bottom: 10px;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu ul li a:hover {
+    color: blue;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .xyz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .banner {
+    width: 100%;
+  }
+
+  .banner h1 {
+    float: inline-end;
+  }
+
+  .aboutContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .programContainer {
+    width: 100%;
+  }
+
+  .articleContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    width: 100%;
+  }
+
+  .programContainer {
+    width: 100%;
+  }
+
+  .aboutContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .articleContainer {
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 768px){ 
+
+  header nav {
+    position: relative;
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    margin-top:20px;
+    border-radius: 5px;
+  }
+
+  header nav::after {
+top: 17px;
+  }
+
+  header nav::before {
+top: 7px;
+  }
+
+  header nav::after, header nav::before{
+    content: "";
+    height: 2px;
+    width: 17px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    left: 5px;
+  }
+  header nav ul {
+    position: absolute;
+    right: -400px;
+    top: 53px;
+    transition: 0.5s;
+  }
+
+  header nav:hover{
+    right: 0;
+  }
+
+  header nav ul li {
+    display: block;
+  }
+
+header nav ul li a {
+    width: 800px;
+    background-color: #ff0000;
+
+} */
+
+@media screen and (max-width: 768px) {
+  .articleItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fit within container without exceeding borders */
+    transition: transform 0.3s ease;
+    padding: 10px; /* Add transition effect */
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .programContainer {
+    width: 100%;
+  }
+
+  .aboutContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .articleContainer {
+    width: 100%;
+  }
+}
+
+/* Burger Menu Styles */
+
+/* Media querries end*/
