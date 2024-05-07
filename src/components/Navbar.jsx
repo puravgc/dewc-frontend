@@ -36,12 +36,15 @@ const Navbar = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("https://dewc-vercel.vercel.app/getproject", {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const response = await fetch(
+          "https://dewc-vercel.vercel.app/getproject",
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch projects");
         }
@@ -199,6 +202,13 @@ const Navbar = () => {
               <div>
                 {userlogin ? (
                   <>
+                    <li
+                      onClick={() => {
+                        navigate("/admin");
+                      }}
+                    >
+                      Admin Access
+                    </li>
                     <li
                       onClick={() => {
                         setuserlogin(false);

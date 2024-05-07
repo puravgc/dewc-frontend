@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
 }
-.top{
+.top {
   display: flex;
   padding-left: 10px;
   padding-top: 10px;
@@ -15,13 +15,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 .mainadmin {
   display: flex;
   height: 94%;
 }
-.sidebar{
+.sidebar {
   height: 100%;
   width: 20%;
   padding-right: 20px;
@@ -29,7 +28,7 @@
   padding-top: 20px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
 }
-.adminbutton{
+.adminbutton {
   width: 100%;
   padding: 12px;
   font-weight: 600;
@@ -47,7 +46,7 @@
   background-color: black;
   color: white;
 }
-.goback{
+.goback {
   width: 100px;
   padding: 2px;
   font-weight: 600;
@@ -64,8 +63,17 @@
   background-color: black;
   color: white;
 }
-.admin-content{
+.admin-content {
   width: 100%;
- 
+
   padding-top: 20px;
+}
+@media screen and (max-width: 1130px) {
+  .mainadmin {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
 }

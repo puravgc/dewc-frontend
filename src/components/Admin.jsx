@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const Admin = () => {
   const [active, setactive] = useState("projects");
-  
+
   const navigate = useNavigate();
   useEffect(() => {
     const token = localStorage.getItem("jwt");
@@ -16,8 +16,6 @@ const Admin = () => {
       navigate("/");
     }
   }, []);
-  
-
 
   return (
     <div className="admin">
@@ -70,7 +68,6 @@ const Admin = () => {
           </div>
         </div>
         <div className="admin-content">
-          
           {active === "projects" ? (
             <div>
               <Projectsedit />
